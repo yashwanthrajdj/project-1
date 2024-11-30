@@ -1,0 +1,65 @@
+.container{
+    width:100%;
+    height: 100vh;
+    background: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.flexbox{
+    height: 500px;
+    width:100px;
+    margin:10px;
+    border-radius: 50px;
+    background: url(https://images.squarespace-cdn.com/content/v1/5d3f241fa4e0350001fa20d5/ce647e06-c435-459c-9a5a-3d7bc379cbb3/Untitled+design-27_2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.flexbox:nth-child(2){
+    background: url(https://media.wazirx.com/web_assets/landing_page_feature1/light/1x.png);
+    background-size: cover;
+    background-position: center;
+}
+.flexbox:nth-child(3){
+    background: url(https://play-lh.googleusercontent.com/W6q_hlNmxML_guYMOGwo15lFNiZGiUfvrlf258bvUN2xEI2K21ltWFs_XekDzDlUuBM=w526-h296-rw);
+    background-size: cover;
+    background-position: center;
+}.flexbox:nth-child(4){
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0u2H-OY0Z6BqRlEvEZPSGYrPWaKuOd1xnLw&s);
+    background-size: cover;
+    background-position: center;
+}
+.flexbox:nth-child(5){
+    background: url(https://cdn.prod.website-files.com/5db1c0d5ca3871e8fd1a7b66/602d3abef69d9a6993226f88_Frame%202.png);
+    background-size: cover;
+    background-position: center;
+}.flexbox:nth-child(6){
+    background: url(https://digitaldirections.com/wp-content/uploads/2023/12/IoT-farming-applications-1024x597.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.flexbox h3{
+    color: #000000;
+    position: absolute;
+    bottom: 1;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5
+    ;
+}
+.flexbox:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.flexbox:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
